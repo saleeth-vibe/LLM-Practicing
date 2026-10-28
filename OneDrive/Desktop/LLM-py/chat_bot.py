@@ -1,7 +1,7 @@
 import ollama
 
 messages = [{"role": "system", "content": "You are a friendly assistant."},]
-model_name = "llama3.2:latest"
+model_name = "gemma3:270m"
 
 while True:
     user_prompt = input("You: ")

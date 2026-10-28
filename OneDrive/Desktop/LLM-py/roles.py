@@ -11,7 +11,7 @@ messages = [
     }
 ]
 
-model_name = "llama3.2:latest"
+model_name = "gemma3:270m"
 
 
 response = ollama.chat(model=model_name, messages=messages)
