@@ -1,7 +1,15 @@
-import ollama 
+# import ollama 
 
-model_name = "llama3.2:latest"
-prompt_name = "Explain how ai works in one line?"
-response = ollama.generate(model= model_name, prompt= prompt_name)
+# model_name = "llama3.2:latest"
+# prompt_name = "Explain how ai works in one line?"
+# response = ollama.generate(model= model_name, prompt= prompt_name)
 
-print(response.response)
+# print(response.response)
+
+
+import ollama
+
+question = input("Ask Me: ")
+
+response = ollama.generate(model="llama3.2:latest", prompt=question)
+print(response["response"])
